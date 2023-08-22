@@ -13,12 +13,11 @@
   </p>
 </p>
 
-
 ## Consigna
 
 El equipo de desarrollo de software ha comenzado un desarrollo para el acceso a datos por medio de una aplicación realizada por medio de Node.js.
 
-Dicho desarrollo se basó en el diseño de acceso a datos por medio de sequelize y las relaciones respectivas para la gestión de cursos Bootcamp de una determinada empresa de adiestramiento. 
+Dicho desarrollo se basó en el diseño de acceso a datos por medio de sequelize y las relaciones respectivas para la gestión de cursos Bootcamp de una determinada empresa de adiestramiento.
 
 El equipo aplica la metodología scrum y ya realizó el primer Sprint del proyecto que se trató en el diseño e implementación por medio de Node.js para el registro de cursos Bootcamp y de usuarios de los mismos.
 
@@ -31,6 +30,7 @@ El requerimiento emitido por la empresa de adiestramiento parte del principio de
 Para el segundo Sprint se desea la construcción de la API RESTful con Express del bootcamp, soportará el token basado en la autenticación con JWT(JSONWebToken) y PostgreSQL.
 
 Para la construcción de la API debe contener los siguientes funcionalidades:
+
 - Un usuario de puede registrar en la API
 - Un usuario inicia sesión con el email y el password
 - Los registros se guardarán en la base de datos PostgreSQL
@@ -42,13 +42,13 @@ Para la construcción de la API debe contener los siguientes funcionalidades:
 
 Para construir este proyecto, se implementaron diferentes herramientas/frameworks, los cuales serán enumerados a continuación:
 
-* [Postgresql](https://www.postgresql.org/)
-* [ExpressJS](https://expressjs.com/)
-* [JSON Web Token](https://github.com/auth0/node-jsonwebtoken)
-* [bcrypt](https://www.npmjs.com/package/bcrypt)
-* [Sequelize](https://sequelize.org/)
-* [Dotenv (development)](https://www.npmjs.com/package/dotenv)
-* [Nodemon](https://www.npmjs.com/package/nodemon)
+- [Postgresql](https://www.postgresql.org/)
+- [ExpressJS](https://expressjs.com/)
+- [JSON Web Token](https://github.com/auth0/node-jsonwebtoken)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [Sequelize](https://sequelize.org/)
+- [Dotenv (development)](https://www.npmjs.com/package/dotenv)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
 
 ## ¡Comenzando!
 
@@ -58,11 +58,9 @@ Sigue estas instrucciones sencillas para montar el proyecto en tu equipo local.
 
 Para poder ejecutar este repositorio en tu equipo local necesitas los siguientes prerequisitos:
 
-* NodeJS y NPM
-puedes instalarlo desde su página oficial https://nodejs.org/en
-o puedes instalar NVM https://github.com/nvm-sh/nvm
-
-
+- NodeJS y NPM
+  puedes instalarlo desde su página oficial https://nodejs.org/en
+  o puedes instalar NVM https://github.com/nvm-sh/nvm
 
 ### Instalación
 
@@ -72,13 +70,13 @@ o puedes instalar NVM https://github.com/nvm-sh/nvm
 git clone https://github.com/Gh0stRaccoon/M8_Prueba.git
 ```
 
-3. Instala los paquetes NPM
+2. Instala los paquetes NPM
 
 ```sh
 npm install
 ```
 
-4. Ingresa tus variables de entorno en el archivo `.env`
+3. Ingresa tus variables de entorno en el archivo `.env`
 
 ```
   HOST=
@@ -89,27 +87,33 @@ npm install
   SECRET=
 ```
 
+4. Ejecuta
+
+```sh
+npm run dev
+```
+
 ## Endpoints
 
 Tienes diferentes rutas para probar:
 
-| Método | Endpoint | Accion |
-|----------|----------|----------|
-| POST    | /api/signup   | Registro de una nuevo usuario, acceso público  |
-| POST    | /api/signin   | Inicio de sesion a la API, acceso público   |
-| GET    | /api/user/:id   | Lista información del usuario según id, acceso por medio de token, previamente iniciado sesión   |
-| GET    | /api/user   | Lista información de todos los usuarios y los bootcamp registrados, acceso por medio de token, previamente iniciado sesión  |
-| PUT    | /api/user/:id   | Actualiza los campos de firstName y lastName de un usuario según su id, acceso por medio de token, previamente iniciado sesión  |
-| DELETE   | /api/user/:id   | Lista información del usuario según id, acceso por medio de token, previamente iniciado sesión   |
-| POST    | /api/bootcamp   | Crea un bootcamp, acceso por medio de token, previamente iniciado sesión  |
-| POST    | /api/bootcamp/adduser | Agrega usuarios previamente registrados al bootcamp, acceso por medio de token, previamente iniciado sesión |
-| GET    | /api/bootcamp/:id   | Obtiene información de un bootcamp según id, y muestra los usuarios registrados en el bootcamp. Acceso por medio de token, previamente iniciado sesión   |
-| GET    | /api/bootcamp   | Lista todos los bootcamp, acceso público   |
-
+| Método | Endpoint              | Accion                                                                                                                                                 |
+| ------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| POST   | /api/signup           | Registro de una nuevo usuario, acceso público                                                                                                          |
+| POST   | /api/signin           | Inicio de sesion a la API, acceso público                                                                                                              |
+| GET    | /api/user/:id         | Lista información del usuario según id, acceso por medio de token, previamente iniciado sesión                                                         |
+| GET    | /api/user             | Lista información de todos los usuarios y los bootcamp registrados, acceso por medio de token, previamente iniciado sesión                             |
+| PUT    | /api/user/:id         | Actualiza los campos de firstName y lastName de un usuario según su id, acceso por medio de token, previamente iniciado sesión                         |
+| DELETE | /api/user/:id         | Lista información del usuario según id, acceso por medio de token, previamente iniciado sesión                                                         |
+| POST   | /api/bootcamp         | Crea un bootcamp, acceso por medio de token, previamente iniciado sesión                                                                               |
+| POST   | /api/bootcamp/adduser | Agrega usuarios previamente registrados al bootcamp, acceso por medio de token, previamente iniciado sesión                                            |
+| GET    | /api/bootcamp/:id     | Obtiene información de un bootcamp según id, y muestra los usuarios registrados en el bootcamp. Acceso por medio de token, previamente iniciado sesión |
+| GET    | /api/bootcamp         | Lista todos los bootcamp, acceso público                                                                                                               |
 
 ## Authors
-* [Joaquín Ignacio Ossandón Gómez](https://github.com/Gh0stRaccoon) - *Estudiante en Talento Digital para Chile*
+
+- [Joaquín Ignacio Ossandón Gómez](https://github.com/Gh0stRaccoon) - _Estudiante en Talento Digital para Chile_
 
 ## Acknowledgements
 
-* [Gh0stRaccoon](https://github.com/Gh0stRaccoon)
+- [Gh0stRaccoon](https://github.com/Gh0stRaccoon)
