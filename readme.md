@@ -113,7 +113,3 @@ Tienes diferentes rutas para probar:
 ## Authors
 
 - [Joaquín Ignacio Ossandón Gómez](https://github.com/Gh0stRaccoon) - _Estudiante en Talento Digital para Chile_
-
-## Acknowledgements
-
-- [Gh0stRaccoon](https://github.com/Gh0stRaccoon)
